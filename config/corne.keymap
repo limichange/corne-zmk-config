@@ -26,54 +26,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        a {
-            bindings = <&kp ESCAPE>;
-            key-positions = <2 1>;
-        };
-
-        b {
-            bindings = <&kp CLCK>;
-            key-positions = <14 13>;
-        };
-
-        c {
-            bindings = <&kp TAB>;
-            key-positions = <26 25>;
-        };
-
-        d {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <10 9>;
-        };
-
-        e {
-            bindings = <&kp ENTER>;
-            key-positions = <22 21>;
-        };
-
-        f {
-            bindings = <&kp MINUS>;
-            key-positions = <19 20>;
-        };
-
-        g {
-            bindings = <&kp EQUAL>;
-            key-positions = <21 20>;
-        };
-
-        h {
-            bindings = <&sys_reset>;
-            key-positions = <1 29>;
-        };
-
-        j {
-            bindings = <&sys_reset>;
-            key-positions = <30 10>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -91,10 +44,10 @@
         number_layer {
             label = "1";
             bindings = <
-&none  &kp LA(N1)      &kp LA(N2)      &kp LA(N3)      &kp LA(N4)      &kp LA(N5)        &kp LA(N6)      &kp LA(N7)      &kp LA(N8)      &kp LA(N9)      &kp LA(N0)      &none
-&none  &kp N1          &kp N2          &kp N3          &kp N4          &kp N5            &kp N6          &kp N7          &kp N8          &kp N9          &kp N0          &none
-&none  &kp LS(LG(N1))  &kp LS(LG(N2))  &kp LS(LG(N3))  &kp LS(LG(N4))  &kp LS(LG(N5))    &kp LS(LG(N6))  &kp LS(LG(N7))  &kp LS(LG(N8))  &kp LS(LG(N9))  &kp LS(LG(N0))  &none
-                                       &none           &none           &bootloader       &bootloader     &none           &none
+&none           &kp LA(N1)      &kp LA(N2)      &kp LA(N3)      &kp LA(N4)      &kp LA(N5)        &kp LA(N6)      &kp LA(N7)      &kp LA(N8)      &kp LA(N9)      &kp LA(N0)      &none
+&none           &kp N1          &kp N2          &kp N3          &kp N4          &kp N5            &kp N6          &kp N7          &kp N8          &kp N9          &kp N0          &none
+&kp LEFT_SHIFT  &kp LS(LG(N1))  &kp LS(LG(N2))  &kp LS(LG(N3))  &kp LS(LG(N4))  &kp LS(LG(N5))    &kp LS(LG(N6))  &kp LS(LG(N7))  &kp LS(LG(N8))  &kp LS(LG(N9))  &kp LS(LG(N0))  &none
+                                                &none           &none           &bootloader       &bootloader     &none           &none
             >;
         };
 
