@@ -26,7 +26,29 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <1 2>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <3 4>;
+        };
+
+        copy {
+            bindings = <&kp K_COPY>;
+            key-positions = <26 27>;
+        };
+
+        paste {
+            bindings = <&kp K_PASTE>;
+            key-positions = <27 28>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
